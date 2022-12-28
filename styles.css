@@ -1,28 +1,75 @@
-body{
-    background-color: beige;
-    font-family :Arial, Helvetica, sans-serif;
+
+.container {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 228, 228);
+    
+    border-radius: 45px;
+    border-color: blueviolet;
+    
     text-align: center;
+    
+    
+
+}    
+.container > div {
+    
+    
+}
+
+.container #message{
+    
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    border: 5px dashed;
+    border-color: blueviolet;
+
+
+
+}
+
+
+body{
+    background-color: rgb(14, 14, 8);
+    font-family :Arial, Helvetica, sans-serif;
+    padding: 50px;
+    width: 35%;    
+    margin: auto;
+    border-radius: 45px;
+    border: 10px dashed;
+    border-color: blueviolet;
+    transform: translate(0,100%);
 
 }
 button {
     font-size: 1.5em;
     padding:10px;
-    color: green;
+    color: black;
+    border-radius: 20px;
+    background-color: blueviolet;
 }
  #counter {
     font-size: 2em;
     font-weight: bold;
-    color: blue;
+    color: black;
  }
 
-#countdown {
-    font-size: 20px;
-    font-weight:bold;
-}
-#message {
-    display: none;
+ #message {
+    color: black;
+    font-size: large;
 }
 
+
+    
+
+
 h1 {
-    color: black;
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: auto;
+
+
 }

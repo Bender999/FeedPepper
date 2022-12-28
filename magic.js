@@ -13,32 +13,42 @@ let count = 0;
 button.addEventListener('click', function(){
     count ++;
     
-    document.getElementById('counter').innerHTML = count;
-    let timer = 10;
-    
-    
-    
-    setInterval(function(){
-        countdown.innerHTML = timer;
-        timer --;
-
-        if (count >= 5 && timer > 0) {
+    document.getElementById('counter').innerHTML = count; 
+                   
+        if (count >= 5 && count < 10) {
             
             message.style.display= "block";
             message.innerHTML="Pepper is now Full. Thank you!";
-        }else if (count < 5 && timer === 0) {
+        }else if (count >= 10 && count <20) {
             
             message.style.display = "block";
-            message.innerHTML = "Pepper starved to death!";
-        if (timer < 0){
+            message.innerHTML = "Pepper doesn't look too well!";
+        }else if (count >=20 && count <25){
             clearInterval(this);
-            }
-            setTimeout(function() {
-                location.reload();
-            });
+            message.style.display = "block";
+            message.innerHTML = "Pepper has puked all over the Kitchen!"
+        }else if (count >=25 && count <50){
+            clearInterval(this);
+            message.style.display = "block";
+            message.innerHTML = "Stop feeding her!"
+        }else if (count >=50 && count <75){
+            clearInterval(this);
+            message.style.display = "block";
+            message.innerHTML = "You Monster!!!!!"
+        }else if (count >=75 && count <100){
+            clearInterval(this);
+            message.style.display = "block";
+            message.innerHTML = "Shes not moving, stop it!"
+        }else if (count >=100){
+            clearInterval(this);
+            message.style.display = "block";
+            message.innerHTML = "STOOOOOOOOOP!!"
         }
+                        
+           
     
-    }, 1000);
-
-
-})
+    
+    });
+        
+    
+    
