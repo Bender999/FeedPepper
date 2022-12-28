@@ -1,4 +1,6 @@
 
+
+
 document.getElementById('passwordForm').addEventListener('submit',function(event){
     event.preventDefault();
 
@@ -12,6 +14,9 @@ document.getElementById('passwordForm').addEventListener('submit',function(event
         alert('Incorrect password');
     }
 })
+
+
+
 
 const button = document.getElementById('button');
 let countdown = document.getElementById("countdown")
