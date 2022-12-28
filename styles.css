@@ -22,21 +22,30 @@
 .container #message{
     
     border-radius: 10px;
-    display: flex;
+    
     margin: auto;
     border: 5px dashed;
     border-color: blueviolet;
-    
+    border: auto;
 
 
 
 }
 #enter{
-    color: red;
-    background-color: white;
+    
+    color:blueviolet;
+    background-color:black;
+    border-radius: 10px;
+    border: 2px solid;
+    font-size: large;
+    border-style: dashed;
+    border-color: red;
+    font-weight: bolder;
+
 }
 
 body{
+    
     background-color: rgb(14, 14, 8);
     font-family :Arial, Helvetica, sans-serif;
     padding: 50px;
@@ -46,6 +55,8 @@ body{
     border: 10px dashed;
     border-color: blueviolet;
     transform: translate(0,100%);
+    text-align: center;
+    align-items: center;
 
 }
 button {
@@ -64,6 +75,10 @@ button {
  #message {
     color: black;
     font-size: large;
+    text-align: center;
+
+    
+
 }
 
 
