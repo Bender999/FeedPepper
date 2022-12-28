@@ -1,12 +1,23 @@
 
+document.getElementById('passwordForm').addEventListener('submit',function(event){
+    event.preventDefault();
 
+    const enteredPassword = document.getElementById('password').value;
+    if (enteredPassword === '123'){
+        document.getElementById('mainContent').style.display = 'block';
+        document.getElementById('passwordForm').style.display = 'none';
+
+
+    }else{
+        alert('Incorrect password');
+    }
+})
 
 const button = document.getElementById('button');
 let countdown = document.getElementById("countdown")
 let message = document.getElementById("message")
 
 let count = 0;
-
 
 
 

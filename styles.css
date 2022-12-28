@@ -26,11 +26,15 @@
     margin: auto;
     border: 5px dashed;
     border-color: blueviolet;
+    
 
 
 
 }
-
+#enter{
+    color: red;
+    background-color: white;
+}
 
 body{
     background-color: rgb(14, 14, 8);
