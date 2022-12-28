@@ -39,10 +39,12 @@ button.addEventListener('click', function(){
             clearInterval(this);
             message.style.display = "block";
             message.innerHTML = "Shes not moving, stop it!"
-        }else if (count >=100){
+        }else if (count >=100 && count <105){
             clearInterval(this);
             message.style.display = "block";
             message.innerHTML = "STOOOOOOOOOP!!"
+        }else if (count === 105){
+            location.reload()
         }
                         
            
