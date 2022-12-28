@@ -15,6 +15,14 @@ button {
     color: blue;
  }
 
+#countdown {
+    font-size: 20px;
+    font-weight:bold;
+}
+#message {
+    display: none;
+}
+
 h1 {
     color: black;
 }
