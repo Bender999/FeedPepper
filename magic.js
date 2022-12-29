@@ -21,14 +21,23 @@ document.getElementById('passwordForm').addEventListener('submit',function(event
 const button = document.getElementById('button');
 let countdown = document.getElementById("countdown")
 let message = document.getElementById("message")
+const picture = document.getElementById('picture');
+
+
 
 let count = 0;
 
+button.addEventListener('click', function(){
+    picture.style.transform = 'translatey(1000%)';
+    picture.style.opacity = '0';
 
+})
 
 button.addEventListener('click', function(){
     count ++;
     
+
+
     document.getElementById('counter').innerHTML = count; 
                    
         if (count >= 1 && count < 5) {
